@@ -1,5 +1,5 @@
 @import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css);
-// @import 'config';
+@import 'config';
 // @import 'home';
 // @import 'menu';
 // @import 'about';
@@ -7,7 +7,7 @@
 // body {
 // 	background: $primary-color;
 // 	color: set-text-color($primary-color);
-// 	height: 100vh;
+	// height: 100vh;
 // 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 // 	line-height: 1;
 // }
@@ -36,53 +36,75 @@
 // 	height: 100%;
 // 	width: 100%;
 
-// 	.social-icons {
-// 		position: fixed;
-// 		bottom: 1rem;
-// 		left: 1rem;
-
-// 		a {
-// 			padding: 0.4rem;
-// 			@include transition-ease;
-
-// 			&:hover {
-// 				color: $secondary-color;
-// 			}
-// 		}
-// 	}
+// 	
 // }
 
-// footer {
-// 	font-size: 1rem;
-// 	position: fixed;
-// 	bottom: 0.4rem;
-// 	right: 1rem;
-// 	text-align: right;
-// 	padding: 1rem;
-// 	color: set-text-color($primary-color);
-// }
+// -----------------------------------------
 
+// font globale
 *{
    font-family: 'Jost', sans-serif;
+   font-feature-settings: "ss01" 1;   
 }
+// classe font serif (bodoni)
 .dp-font-s {
    font-family: 'Besley'
 }
+// sfondo home
 .dp-home__background {
-   background-image: url('https://picsum.photos/seed/picsum/2000');
+   background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),   
+      url('https://picsum.photos/id/274/1500?grayscale&blur=1');
    background-size: cover;        /* Copre l'intero div */
    background-position: center;   /* Centra l'immagine */
    background-repeat: no-repeat;  /* Non ripete l'immagine */
    height: 100vh;                 /* Imposta l'altezza per visualizzare l'immagine */
-   color: white;        
+   /* color: black;  Rompe cose SISTEMARE */
 }
-
+// Customizzazione Hamburger
 .navbar-toggler {
    border-color: transparent;
-      &:focus {
-         box-shadow: none;
+      &:focus {   
+         box-shadow: none;  /* Rimuove bordo focus*/
       }
 }
-
+//Customizzazione Bottone chiusura offcanvas
+.dp-btn-close {
+   border-color: transparent;
+   width: 3em;
+   &:focus {
+      box-shadow: none;
+   }
+}
+// Customizzazione Bottoni
 .dp-btn {
    border-radius: 0}
+   
+//   Icone social 
+.dp-social-icons {
+   font-size: 1.5rem;
+   a {
+      //text-decoration: none;
+      color: var(--bs-secondary-color);
+      @include transition-ease-fast; 
+      
+      &:hover {
+      	color: $dp-accent;
+      }
+	}
+}   
+
+.dp-navbar-brand {
+   z-index: 1046
+}
+// Footer
+footer {
+	// font-size: 1rem;
+	// position: fixed;
+	// bottom: 0.4rem;
+	// right: 1rem;
+	// text-align: right;
+	// padding: 1rem;
+   // color: white;
+	// color: set-text-color($primary-color); < DA SISTEMARE
+}
