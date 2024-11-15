@@ -25,3 +25,15 @@
 //         showMenu = false;
 //     }
 // }
+
+const navEl = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+   if (window.scrollY >= 10) {
+      navEl.classList.add('dp-navbar-scrolled')
+   } else if (window.scrollY < 10) {
+      navEl.classList.remove('dp-navbar-scrolled')
+   }
+});
+
+// 56

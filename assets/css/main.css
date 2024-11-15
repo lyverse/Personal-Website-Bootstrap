@@ -14,6 +14,7 @@
   background-position: center; /* Centra l'immagine */
   background-repeat: no-repeat; /* Non ripete l'immagine */
   height: 100vh; /* Imposta l'altezza per visualizzare l'immagine */
+  background-attachment: fixed;
   /* color: black;  Rompe cose SISTEMARE */
 }
 
@@ -55,4 +56,10 @@
   --bs-offcanvas-width: 100vw;
   --bs-offcanvas-height: 30vh;
   height: 30vh;
+}
+
+.dp-navbar-scrolled {
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=main.css.map */

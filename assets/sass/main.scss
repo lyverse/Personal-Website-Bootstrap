@@ -59,6 +59,7 @@
    background-position: center;   /* Centra l'immagine */
    background-repeat: no-repeat;  /* Non ripete l'immagine */
    height: 100vh;                 /* Imposta l'altezza per visualizzare l'immagine */
+   background-attachment: fixed;
    /* color: black;  Rompe cose SISTEMARE */
 }
 // Customizzazione Hamburger
@@ -123,4 +124,11 @@
    // --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
    // --bs-offcanvas-transition: transform 0.3s ease-in-out;
    // --bs-offcanvas-title-line-height: 1.5;
+}
+
+// Background menu Scroll
+.dp-navbar-scrolled {
+   @include transition-ease-fast;
+   background-color: black;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
