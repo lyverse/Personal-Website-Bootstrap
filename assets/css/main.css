@@ -49,4 +49,10 @@
 
 .dp-navbar-brand {
   z-index: 1046;
+}
+
+.dp-offcanvas {
+  --bs-offcanvas-width: 100vw;
+  --bs-offcanvas-height: 30vh;
+  height: 30vh;
 }/*# sourceMappingURL=main.css.map */
