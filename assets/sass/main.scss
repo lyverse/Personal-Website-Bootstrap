@@ -3,6 +3,7 @@
 // @import 'home';
 // @import 'menu';
 // @import 'about';
+@import "logo";
 
 // body {
 // 	background: $primary-color;
@@ -79,7 +80,10 @@
 }
 // Customizzazione Bottoni
 .dp-btn {
-   border-radius: 0}
+   border-radius: 0;
+   color: var(--bs-nav-link-color);
+   --bs-btn-border-color: var(--bs-nav-link-color);
+}
    
 //   Icone social 
 .dp-social-icons {
@@ -113,8 +117,10 @@
 
 .dp-offcanvas {
    --bs-offcanvas-width: 100vw;
-   --bs-offcanvas-height: 30vh;
-   height: 30vh;
+   max-height: 280px;
+   // --bs-offcanvas-height: 30vh;
+   // -----
+   // height: 30vh;
    // --bs-offcanvas-padding-x: 1rem;
    // --bs-offcanvas-padding-y: 1rem;
    // --bs-offcanvas-color: var(--bs-body-color);
@@ -126,7 +132,7 @@
    // --bs-offcanvas-title-line-height: 1.5;
 }
 
-// Background menu dopo Scroll
+// Background Menu dopo Scroll
 .dp-navbar-scrolled {
    @include transition-ease-fast;
    background-color: black;
