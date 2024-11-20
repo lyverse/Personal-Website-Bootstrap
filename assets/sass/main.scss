@@ -1,9 +1,9 @@
 @import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css);
 @import 'config';
+@import "logo";
 // @import 'home';
 // @import 'menu';
 // @import 'about';
-@import "logo";
 
 // body {
 // 	background: $primary-color;
@@ -135,6 +135,7 @@
 // Background Menu dopo Scroll
 .dp-navbar-scrolled {
    @include transition-ease-fast;
-   background-color: black;
+   backdrop-filter: blur(2px);
+   // background-color: transparent;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
