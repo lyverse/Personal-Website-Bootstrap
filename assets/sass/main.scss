@@ -53,16 +53,42 @@
 }
 // sfondo home
 .dp-home__background {
-   background-image: 
-      linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),   
-      url('https://picsum.photos/id/274/1500?grayscale&blur=1');
-   background-size: cover;        /* Copre l'intero div */
-   background-position: center;   /* Centra l'immagine */
-   background-repeat: no-repeat;  /* Non ripete l'immagine */
-   height: 100vh;                 /* Imposta l'altezza per visualizzare l'immagine */
-   background-attachment: fixed;
+//    background: rgb(82,34,113);
+background: rgb(82,34,113);
+background: linear-gradient(122deg, rgba(82,34,113,1) 0%, rgba(167,34,99,1) 25%, rgba(110,13,13,1) 50%, rgba(21,57,138,1) 75%, rgba(108,75,27,1) 100%);
+
+//    // background-image:   
+//    // linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),   
+//    // url('https://picsum.photos/id/274/1500?grayscale&blur=1');
+   
+//    background-size: cover;        /* Copre l'intero div */
+//    background-position: center;   /* Centra l'immagine */
+//    background-repeat: no-repeat;  /* Non ripete l'immagine */
+//    height: 100vh;                 /* Imposta l'altezza per visualizzare l'immagine */
+//    background-attachment: fixed;
    /* color: black;  Rompe cose SISTEMARE */
+
+   // background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 }
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 // Customizzazione Hamburger
 .navbar-toggler {
    border-color: transparent;
