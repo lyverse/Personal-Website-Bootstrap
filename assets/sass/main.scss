@@ -135,7 +135,7 @@
 // Background Menu dopo Scroll
 .dp-navbar-scrolled {
    @include transition-ease-fast;
-   backdrop-filter: blur(2px);
+   backdrop-filter: blur(10px);
    // background-color: transparent;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }

@@ -70,6 +70,6 @@
 
 .dp-navbar-scrolled {
   transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(10px);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=main.css.map */
