@@ -8,35 +8,6 @@
   mask: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTUgMjU1Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiAjZmZmOwogICAgICB9CiAgICA8L3N0eWxlPgogIDwvZGVmcz4KICA8cGF0aCBjbGFzcz0iY2xzLTEiIGQ9Im0yMzIuODgsMTUyLjU2Yy0uMDEuMTctLjAyLjM2LS4wNi41NC0xLjM2LDEzLjMtMy4wNSwyNy41Mi04LjE3LDM5LjYxLTEuMzQsMy4xNC00Ljg0LDkuNTUtOS40MSwxNi42Ny0zLjgsNS45LTcuNzMsOS44OC0xMS4wMiwxMy40NC02LjMyLDYuODMtMTMuNSwxMi42Mi0yMS4zNywxNy4zMS01Ljg3LDMuNTItMTIuMTUsNi40Mi0xOC43NCw4LjY1LTYuNzYsMi4zLTE0LjQ3LDMuODgtMjIuOTUsNC45LTUuMjQuNjItOS4xLjY3LTE1LjI3Ljg5LTEuOTcuMDctNy45LS4yOS0xNi40OC4xNC0xMy4xMy42Ni0yNi4yNC4yMS0zOS4zNC0xLjMyLS4zMi0uMDMtLjU2LS4zMS0uNTgtLjY1LS4zMi0yMy41Ny0uNjEtMzkuOTgtLjg1LTQ5LjI0LS4zMi0xMS44Mi0uMTctMjMuMTEuNDQtMzMuODUuMS0xLjk4LjI0LTMuOTQuMzgtNS44OS4wMi0uMzIuMy0uNTkuNjItLjU5LDYuMi0uMTIsMTIuMzgtLjIzLDE4LjU4LS4zMiwxMi41Mi0uMjEsMjUuMDUtLjM4LDM3LjU4LS41Myw0LjYzLS4wNiw5LjkzLS42MywxNS45LTEuNzMsNS40Ni0xLjAxLDEwLjQ5LTIuNjMsMTUuMS00Ljg0LDUuODUtMi44LDExLjQyLTYuMTMsMTYuNy05Ljk2LDIuNDgtMS44MSw0LjY1LTMuODgsNi41My02LjIyLjg0LTEuMDUsMi41OC0zLjQ3LDUuMjItNy4yOCwzLjg3LTUuNTksNi45OC0xMS41Myw5LjM0LTE3Ljg0LDEuMzctMy42NiwyLjM2LTcuNSwyLjk2LTExLjUyLjM5LTIuNTEuNjEtNS4wOS42OS03Ljc1LjI2LTguODkuMzMtMTUuMzktMS4xMS0yMi43Mi0uMS0uNTEtLjIxLTEuMDEtLjMyLTEuNTN2LS4wNWMwLS4zOC4xOC0uNDYuNTQtLjIzLjAxLjAxLjAzLjAyLjA1LjAzLjM2LjMxLjczLjYzLDEuMDkuOTcuMjQuMjIuNDguNDUuNzEuNjguNDcuNDMuOTMuODgsMS4zOSwxLjM0LDEuMzUsMS4zNCwyLjYzLDIuNzQsMy44NSw0LjIsMTMuODEsMTYuMzksMjEuMzgsMjkuNzIsMjYuNCw0OS4wMy45OCwzLjc3LDEuNiw4LjI0LDEuODcsMTMuNDEuMiwzLjkuMTIsNy45OS0uMjgsMTIuMjZaIi8+CiAgPHBhdGggY2xhc3M9ImNscy0xIiBkPSJtMTQ3LjYxLDU0LjI1YzcuMzcsNS45NywxMS41NCwxMy45NiwxMi41MSwyMy45OC43Miw3LjQ0LS4wOSwxNC41My0yLjQzLDIxLjI1LTIuNTMsNy4yNS02LjQyLDEyLjk0LTExLjY3LDE3LjA3LTQuNTcsMy41OS05LjgzLDUuOC0xNS43Nyw2LjYxLTEuMDguMTUtNi42NC4yNi0xNi42OS4zMy0xNC44NS4xMi0yOS43MS4xNy00NC41Ny4xNS0uMzEsMC0uNTYtLjI1LS41Ni0uNTYsMCwwLDAsMCwwLS4wMS4wNC0xMy45LjItMjcuOC40Ny00MS42OS4yMy0xMS45Ny4wOS0yNC4xOS0uMDItMzYuNTUuMDQtLjM0LjMyLS41OS42Ny0uNiwxNS43Ni0uMTksMzQuMTItLjM4LDQ5Ljc3LS41OCwyLjI1LS4wMyw1LjQuMzMsOS40NiwxLjA4LDMuMjEuNTgsNi4xOCwxLjYsOC45LDMuMDYsMy44NiwyLjA2LDcuMTcsNC4yLDkuOTMsNi40NFoiLz4KPC9zdmc+");
 }
 
-* {
-  font-family: "Jost", sans-serif;
-  font-feature-settings: "ss01" 1;
-}
-
-.dp-font-s {
-  font-family: "Besley";
-}
-
-.dp-home__background {
-  background: rgb(51, 17, 34);
-  background: linear-gradient(111deg, rgb(51, 17, 34) 25%, rgb(16, 14, 54) 50%, rgb(14, 34, 48) 75%);
-  /* color: black;  Rompe cose SISTEMARE */
-  background-size: 400% 400%;
-  animation: gradient-background 120s ease infinite;
-  height: 100vh;
-}
-
-@keyframes gradient-background {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .navbar-toggler {
   border-color: transparent;
 }
@@ -50,6 +21,50 @@
 }
 .dp-btn-close:focus {
   box-shadow: none;
+}
+
+.dp-navbar-brand {
+  z-index: 1046;
+}
+
+.dp-offcanvas {
+  --bs-offcanvas-width: 100vw;
+  max-height: 280px;
+}
+
+.dp-navbar-scrolled {
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.dp-home__background {
+  background: rgb(51, 17, 34);
+  background: linear-gradient(111deg, rgb(51, 17, 34) 25%, rgb(16, 14, 54) 50%, rgb(14, 34, 48) 75%);
+  background-size: 400% 400%;
+  animation: gradient-background 120s ease infinite;
+  height: 100vh;
+  /* color: black;  Rompe cose SISTEMARE */
+}
+
+@keyframes gradient-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+* {
+  font-family: "Jost", sans-serif;
+  font-feature-settings: "ss01" 1;
+}
+
+.dp-font-s {
+  font-family: "Besley";
 }
 
 .dp-btn {
@@ -67,19 +82,4 @@
 }
 .dp-social-icons a:hover {
   color: rebeccapurple;
-}
-
-.dp-navbar-brand {
-  z-index: 1046;
-}
-
-.dp-offcanvas {
-  --bs-offcanvas-width: 100vw;
-  max-height: 280px;
-}
-
-.dp-navbar-scrolled {
-  transition: all 0.3s ease-in-out;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+// Customizzazione Hamburger
+.navbar-toggler {
+   border-color: transparent;
+      &:focus {   
+         box-shadow: none;  /* Rimuove bordo focus*/
+      }
+}
+
+//Customizzazione Bottone chiusura offcanvas
+.dp-btn-close {
+   border-color: transparent;
+   width: 3em;
+   &:focus {
+      box-shadow: none;
+   }
+}
+
+//Logo navbar su offcanvas
+.dp-navbar-brand {
+   z-index: 1046
+}
+// Footer
+// footer {
+// 	// font-size: 1rem;
+// 	// position: fixed;
+// 	// bottom: 0.4rem;
+// 	// right: 1rem;
+// 	// text-align: right;
+// 	// padding: 1rem;
+//    // color: white;
+// 	// color: set-text-color($primary-color); < DA SISTEMARE
+// }
+
+//Opzioni Custom Offcanvas
+.dp-offcanvas {
+   --bs-offcanvas-width: 100vw;
+   max-height: 280px;
+   // --bs-offcanvas-height: 30vh;
+   // -----
+   // height: 30vh;
+   // --bs-offcanvas-padding-x: 1rem;
+   // --bs-offcanvas-padding-y: 1rem;
+   // --bs-offcanvas-color: var(--bs-body-color);
+   // --bs-offcanvas-bg: var(--bs-body-bg);
+   // --bs-offcanvas-border-width: var(--bs-border-width);
+   // --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+   // --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
+   // --bs-offcanvas-transition: transform 0.3s ease-in-out;
+   // --bs-offcanvas-title-line-height: 1.5;
+}
+
+// Background Menu dopo Scroll
+.dp-navbar-scrolled {
+   @include transition-ease-fast;
+   backdrop-filter: blur(10px);
+   // background-color: transparent;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
