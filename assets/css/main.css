@@ -18,8 +18,8 @@
 }
 
 .dp-home__background {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(123deg, rgb(2, 0, 36) 21%, rgb(51, 17, 34) 35%, rgb(16, 14, 54) 50%, rgb(14, 34, 48) 66%, rgb(2, 0, 36) 80%);
+  background: rgb(51, 17, 34);
+  background: linear-gradient(111deg, rgb(51, 17, 34) 25%, rgb(16, 14, 54) 50%, rgb(14, 34, 48) 75%);
   /* color: black;  Rompe cose SISTEMARE */
   background-size: 400% 400%;
   animation: gradient-background 120s ease infinite;
