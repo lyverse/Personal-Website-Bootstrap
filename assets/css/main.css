@@ -42,7 +42,7 @@
   background: rgb(51, 17, 34);
   background: linear-gradient(111deg, rgb(51, 17, 34) 25%, rgb(16, 14, 54) 50%, rgb(14, 34, 48) 75%);
   background-size: 400% 400%;
-  animation: gradient-background 120s ease infinite;
+  animation: gradient-background 60s ease infinite;
   height: 100vh;
   /* color: black;  Rompe cose SISTEMARE */
 }
