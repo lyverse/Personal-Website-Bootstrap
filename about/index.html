@@ -17,31 +17,35 @@
   	</head>
 
 	<body class="dp-home__background d-flex flex-column min-vh-100">
-
-		<nav class="navbar sticky-top navbar-expand-md py-3">
-			<div class="container-fluid">
-				<a class="navbar-brand ms-3 dp-font-s dp-navbar-brand" aria-current="page" href="../">
-					<i class="dp-logo-icon" alt="Logo"></i>
-					Davide Proni</a>
-			  	<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-				 	<span class="navbar-toggler-icon"></span>
-			  	</button>
-			  	<div class="offcanvas offcanvas-end dp-offcanvas" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-					<div class="offcanvas-header">
-					<!-- <a class="offcanvas-title dp-font-s navbar-brand" aria-current="page" href="./">Davide Proni</a> -->
-					<!-- <h5 class="offcanvas-title dp-font-s" id="offcanvasNavbarLabel">Davide Proni</h5> -->
-					<button type="button" class="btn-close dp-btn-close py-4" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
-					</div>
-				<div class="offcanvas-body">
-					<ul class="navbar-nav justify-content-end flex-grow-1 pe-1 gap-4 row-gap-4">
-						<!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-						<a class="nav-link active ms-2" aria-current="page" href="../about">About Me</a>
-						<a class="nav-link ms-2" href="../portfolio">My Works</a>
-						<a class="nav-item btn btn-outline-light dp-btn" href="../contact">Get in touch</a> <!-- btn-outline-dark se sfondo chiaro -->
+		
+		<nav>
+			<div class="navbar fixed-top navbar-expand-md dp-scroll py-3">
+				<div class="container-fluid">
+					<a class="navbar-brand ms-3 dp-font-s dp-navbar-brand" aria-current="page" href="../">
+						<i class="dp-logo-icon" alt="Logo"></i>
+						Davide Proni</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="offcanvas offcanvas-end dp-offcanvas" tabindex="-1" data-bs-scroll="true"id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+						<div class="offcanvas-header">
+						<!-- <a class="offcanvas-title dp-font-s navbar-brand" aria-current="page" href="./">Davide Proni</a> -->
+						<!-- <h5 class="offcanvas-title dp-font-s" id="offcanvasNavbarLabel">Davide Proni</h5> -->
+						<button type="button" class="btn-close dp-btn-close py-4" data-bs-dismiss="offcanvas" aria-label="Close"></button> 
+						</div>
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-1 gap-4 row-gap-4">
+							<!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+							<a class="nav-link active ms-2" aria-current="page" href="../about">About Me</a>
+							<a class="nav-link ms-2" href="../portfolio">My Works</a>
+							<a class="nav-item btn btn-outline-light dp-btn" href="../contact">Get in touch</a> <!-- btn-outline-dark se sfondo chiaro -->
+						</div>
 					</div>
 				</div>
 			</div>
+			<div class="navbar-spacer"></div>
 		</nav>
+
 
 		<main class="container col-xxl-8 px-4 py-5">
 			<div class="row flex-lg-row-reverse align-items-center g-5 py-5">

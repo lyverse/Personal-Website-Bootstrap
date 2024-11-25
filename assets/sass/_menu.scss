@@ -50,9 +50,18 @@
 }
 
 // Background Menu dopo Scroll
-.dp-navbar-scrolled {
+.dp-scrolled {
    @include transition-ease-fast;
    backdrop-filter: blur(10px);
    // background-color: transparent;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
+
+// .navbar {
+//    height: 74px; /* Altezza della navbar */
+//  }
+
+//Margine per menu fixed
+.navbar-spacer {
+   margin-top: 74px; /* Deve corrispondere all'altezza della navbar */
+ }

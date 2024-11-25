@@ -32,10 +32,14 @@
   max-height: 280px;
 }
 
-.dp-navbar-scrolled {
+.dp-scrolled {
   transition: all 0.3s ease-in-out;
   backdrop-filter: blur(10px);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-spacer {
+  margin-top: 74px; /* Deve corrispondere all'altezza della navbar */
 }
 
 .dp-home__background {

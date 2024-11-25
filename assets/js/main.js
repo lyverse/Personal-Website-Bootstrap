@@ -1,3 +1,11 @@
+//Scroll per menu background
+document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('scroll', function () {
+    var nav = document.querySelector('.dp-scroll');
+    var scrolled = window.scrollY > nav.offsetHeight;
+    nav.classList.toggle('dp-scrolled', scrolled);
+  });
+});
 // const menuBtn = document.querySelector('.menu-btn');
 // const hamburger = document.querySelector('.menu-btn__burger');
 // const nav = document.querySelector('.nav');
@@ -25,15 +33,16 @@
 //         showMenu = false;
 //     }
 // }
+//----------
 
-const navEl = document.querySelector('.navbar');
+// const navEl = document.querySelector('.navbar');
 
-window.addEventListener('scroll', () => {
-   if (window.scrollY >= 10) {
-      navEl.classList.add('dp-navbar-scrolled')
-   } else if (window.scrollY < 10) {
-      navEl.classList.remove('dp-navbar-scrolled')
-   }
-});
+// window.addEventListener('scroll', () => {
+//    if (window.scrollY >= 20) {
+//       navEl.classList.add('dp-navbar-scrolled')
+//    } else if (window.scrollY < 20) {
+//       navEl.classList.remove('dp-navbar-scrolled')
+//    }
+// });
 
-// 56
+//--------
