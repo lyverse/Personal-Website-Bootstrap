@@ -23,6 +23,10 @@
    color: var(--bs-nav-link-color);
    --bs-btn-border-color: var(--bs-nav-link-color);
 }
+//Classe no wrap per impedire di andare a capo
+.no-wrap {
+   white-space: nowrap; /* Impedisce al testo nel span di andare a capo */
+ }
    
 //   Icone social 
 .dp-social-icons {
@@ -38,6 +42,10 @@
 	}
 }   
 
+
+
+
+//Chaos Dump
 //-----------------------------------------------------------------
 // body {
 // 	background: $primary-color;
