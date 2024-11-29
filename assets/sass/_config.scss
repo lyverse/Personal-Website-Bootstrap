@@ -11,6 +11,28 @@ $dp-accent:  rebeccapurple;
 }
 
 
+// Sfondo animato
+.dp-background-a {
+   background: rgb(51,17,34);
+   background: linear-gradient(111deg, rgba(51,17,34,1) 25%, rgba(16,14,54,1) 50%, rgba(14,34,48,1) 75%);
+   background-size: 400% 400%;
+   animation: gradient-background 60s ease infinite;
+   min-height: 100vh;
+}
+  
+@keyframes gradient-background {
+   0% {
+      background-position: 0% 50%;
+   }
+   50% {
+      background-position: 100% 50%;
+   }
+   100% {
+      background-position: 0% 50%;
+   }
+}
+
+
 // $primary-color: #272727;
 // $secondary-color: #ff652f;
 

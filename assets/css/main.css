@@ -1,4 +1,23 @@
 @import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css);
+.dp-background-a {
+  background: rgb(51, 17, 34);
+  background: linear-gradient(111deg, rgb(51, 17, 34) 25%, rgb(16, 14, 54) 50%, rgb(14, 34, 48) 75%);
+  background-size: 400% 400%;
+  animation: gradient-background 60s ease infinite;
+  min-height: 100vh;
+}
+
+@keyframes gradient-background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .dp-logo-icon {
   width: 30px;
   height: 30px;
@@ -42,25 +61,6 @@
   margin-top: 74px; /* Deve corrispondere all'altezza della navbar */
 }
 
-.dp-home__background {
-  background: rgb(51, 17, 34);
-  background: linear-gradient(111deg, rgb(51, 17, 34) 25%, rgb(16, 14, 54) 50%, rgb(14, 34, 48) 75%);
-  background-size: 400% 400%;
-  animation: gradient-background 60s ease infinite;
-  height: 100vh;
-}
-
-@keyframes gradient-background {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .wave {
   animation-name: wave-animation;
   animation-duration: 1.5s;
@@ -88,6 +88,11 @@
   }
 }
 /* color: black;  Rompe cose SISTEMARE */
+.dp-list-item {
+  --bs-bg-opacity: 1;
+  background-color: transparent !important;
+}
+
 * {
   font-family: "Jost", sans-serif;
   font-feature-settings: "ss01" 1;
