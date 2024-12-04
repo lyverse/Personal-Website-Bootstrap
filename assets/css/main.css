@@ -49,7 +49,7 @@
 
 .dp-offcanvas {
   --bs-offcanvas-width: 100vw;
-  max-height: 280px;
+  height: 280px;
 }
 
 .dp-scrolled {

@@ -34,7 +34,9 @@
 //Opzioni Custom Offcanvas
 .dp-offcanvas {
    --bs-offcanvas-width: 100vw;
-   max-height: 280px;
+   // max-height: 280px;
+   //min-height: 280px;
+   height: 280px;
    // --bs-offcanvas-height: 30vh;
    // -----
    // height: 30vh;
