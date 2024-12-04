@@ -6,13 +6,13 @@
 @import 'about';
 
 
-// font globale
+// Global Font
 *{
    font-family: 'Jost', sans-serif;
-   font-feature-settings: "ss01" 1;   
+   font-feature-settings: "tnum" 1, "ss01" 1;   
 }
 
-// classe font serif (bodoni)
+// Serif font Class (bodoni)
 .dp-font-s {
    font-family: 'Besley'
 }
@@ -28,7 +28,7 @@
    white-space: nowrap; /* Impedisce al testo nel span di andare a capo */
  }
    
-//   Icone social 
+// Icone social 
 .dp-social-icons {
    font-size: 1.5rem;
    a {
@@ -42,12 +42,49 @@
 	}
 }   
 
+// Unordered list customization
+.ul-dp {
+   list-style: none; /* Disabilita il marker predefinito */
+   padding: 0;
+   margin: 0;
+}
+// Unordered list item customization
+.ul-dp > .dp-list-item {
+   position: relative; /* Necessario per posizionare il marker */
+   padding-left: 1.5rem; /* Aggiungi spazio per il simbolo */
+   --bs-bg-opacity: 1;
+   background-color: transparent !important;
+   border: none;
+      &:before {
+      content: "✱"; /* Il simbolo della lista */
+      position: absolute;
+      left: 0; /* Posiziona il simbolo a sinistra */
+      top: 0.3rem; /* Allinea verticalmente con il testo */
+      font-size: 1rem; /* Personalizza la dimensione del simbolo */
+      color: currentColor; /* Usa il colore del testo */
+      }
+}
+
 
 
 
 
 //Chaos Dump
 //-----------------------------------------------------------------
+
+
+// .dp-list-item {
+//    margin-bottom: 3rem;        
+//    --bs-bg-opacity: 1;
+//    background-color: transparent !important;
+// }
+
+// .ul-dp {
+//    list-style-type: "✱ "; 
+//    list-style-position: outside;
+// }
+
+
 // body {
 // 	background: $primary-color;
 // 	color: set-text-color($primary-color);

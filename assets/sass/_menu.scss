@@ -51,7 +51,7 @@
 
 // Background Menu dopo Scroll
 .dp-scrolled {
-   @include transition-ease-fast;
+   @include transition-ease-faster;
    backdrop-filter: blur(10px);
    // background-color: transparent;
    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
