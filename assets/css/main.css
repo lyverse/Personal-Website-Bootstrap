@@ -76,12 +76,15 @@
     transform: rotate(0deg);
   }
   20% {
-    transform: rotate(-9deg);
+    transform: rotate(9deg);
   }
   40% {
-    transform: rotate(12deg);
+    transform: rotate(-10deg);
   }
   60% {
+    transform: rotate(8deg);
+  }
+  80% {
     transform: rotate(-8deg);
   }
   100% {
@@ -89,6 +92,20 @@
   }
 }
 /* color: black;  Rompe cose SISTEMARE */
+.dp-bkgrnd-portrait img {
+  border-radius: 50%;
+  background: linear-gradient(150deg, rgba(0, 0, 0, 0) 10%, rgb(18, 18, 18));
+}
+
+.dp-border-md-only {
+  border: none;
+}
+@media (min-width: 768px) {
+  .dp-border-md-only {
+    border-right: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+}
+
 * {
   font-family: "Jost", sans-serif;
   font-feature-settings: "tnum" 1, "ss01" 1;
