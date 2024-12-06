@@ -115,6 +115,10 @@
   font-family: "Besley";
 }
 
+.dp-font-sbod {
+  font-family: "Bodoni 11";
+}
+
 .dp-btn {
   border-radius: 0;
   color: var(--bs-nav-link-color);
