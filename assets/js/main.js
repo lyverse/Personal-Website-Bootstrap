@@ -1,11 +1,23 @@
 //Scroll per menu background
+
 document.addEventListener('DOMContentLoaded', function () {
   document.addEventListener('scroll', function () {
     var nav = document.querySelector('.dp-scroll');
-    var scrolled = window.scrollY > nav.offsetHeight;
-    nav.classList.toggle('dp-scrolled', scrolled);
+    if (nav) {
+      var scrolled = window.scrollY > 0; // Controlla qualsiasi scroll
+      nav.classList.toggle('dp-scrolled', scrolled);
+    }
   });
 });
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   document.addEventListener('scroll', function () {
+//     var nav = document.querySelector('.dp-scroll');
+//     var scrolled = window.scrollY > nav.offsetHeight;
+//     nav.classList.toggle('dp-scrolled', scrolled);
+//   });
+// });
 
 //Chaos Dump
 
