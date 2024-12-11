@@ -94,6 +94,7 @@
 /* color: black;  Rompe cose SISTEMARE */
 .dp-bkgrnd-portrait img {
   border-radius: 50%;
+  filter: grayscale(100%);
   background: linear-gradient(150deg, rgba(0, 0, 0, 0) 10%, rgb(18, 18, 18));
 }
 
