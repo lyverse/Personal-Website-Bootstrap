@@ -130,6 +130,10 @@
   box-shadow: 0.2em 0.2em 0 0 rebeccapurple;
 }
 
+.dp-bg-jt {
+  background-color: rgba(43, 48, 53, 0.2);
+}
+
 * {
   font-family: "Jost", sans-serif;
   font-feature-settings: "tnum" 1, "ss01" 1;
@@ -145,8 +149,6 @@
 
 .dp-btn {
   border-radius: 0;
-  color: var(--bs-nav-link-color);
-  --bs-btn-border-color: var(--bs-nav-link-color);
 }
 
 .no-wrap {

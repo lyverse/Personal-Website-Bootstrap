@@ -5,6 +5,7 @@
 @import 'home';
 @import 'about';
 @import 'contact';
+@import 'portfolio';
 
 
 // Global Font
@@ -27,8 +28,8 @@
 // Customizzazione Bottoni
 .dp-btn {
    border-radius: 0;
-   color: var(--bs-nav-link-color);
-   --bs-btn-border-color: var(--bs-nav-link-color);
+   // color: var(--bs-nav-link-color);
+   // --bs-btn-border-color: var(--bs-nav-link-color);
 }
 //Classe no wrap per impedire di andare a capo
 .no-wrap {
