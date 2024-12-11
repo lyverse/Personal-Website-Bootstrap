@@ -1,0 +1,25 @@
+
+//Raggio bordo form
+.dp-form {
+   border-radius: 0rem;
+}
+
+.dp-form-ibox {
+   background-color: transparent;
+    border: none;
+    border-radius: none;
+}
+
+.dp-cta {
+   border-radius: 0;
+   color: #000;
+   background-color: #fff;
+   // $dp-accent;
+   --bs-btn-border-color: #fff;
+   &:hover {
+      --bs-btn-hover-color: rgba(#fff, 1.0);
+      --bs-btn-hover-bg: transparent;
+      --bs-btn-hover-border-color: #fff;
+      box-shadow: 0.2em 0.2em 0 0 $dp-accent;
+   }
+}

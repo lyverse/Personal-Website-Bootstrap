@@ -4,6 +4,7 @@
 @import 'menu';
 @import 'home';
 @import 'about';
+@import 'contact';
 
 
 // Global Font
@@ -19,7 +20,7 @@
 
 //Serif font Bodoni
 .dp-font-sbod {
-   font-family: 'Bodoni 11';
+   font-family: 'Bodoni 16';
 }
 
 
@@ -46,7 +47,12 @@
       	color: $dp-accent;
       }
 	}
-}   
+}  
+
+//
+.dp-t-ease-f {
+   @include transition-ease-fast; 
+}
 
 // Unordered list customization
 .ul-dp {

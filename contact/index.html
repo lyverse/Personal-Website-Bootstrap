@@ -17,8 +17,9 @@
 		<link rel="manifest" href="../assets/favicon/site.webmanifest">
   	</head>
 
-	<body class="dp-home__background d-flex flex-column min-vh-100">
+	<body class="dp-background-a d-flex flex-column min-vh-100">
 
+		<!-- Navbar -->
 		<nav>
 			<div class="navbar fixed-top navbar-expand-md dp-scroll py-3">
 				<div class="container-fluid">
@@ -39,7 +40,7 @@
 							<!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
 							<a class="nav-link ms-2" href="../about">About Me</a>
 						<a class="nav-link ms-2" href="../portfolio">My Works</a>
-						<a class="nav-item btn btn-outline-light dp-btn active" aria-current="page"  href="../contact">Get in touch</a> <!-- btn-outline-dark se sfondo chiaro -->
+						<a class="nav-item btn btn-outline-light dp-btn" style="color: #fff;" aria-current="page"  href="../contact">Get in touch</a> <!-- btn-outline-dark se sfondo chiaro -->
 						</div>
 					</div>
 				</div>
@@ -47,62 +48,61 @@
 			<div class="navbar-spacer"></div>
 		</nav>
 
-		<main class="">
-			<!-- Contact 5 - Bootstrap Brain Component -->
-			<section class="py-3 py-md-5 py-xl-8">
-				<div class="container">
-				<div class="row">
-					<div class="col">
-						<h2 class="display-5 mb-4 mb-md-5 mb-xl-8">Feel free to contact me using the form below. </h2>
-						<h2 class="mb-4 mb-md-5 mb-xl-8 dp-font-s text-end">Whether you have a project in mind, a question, or just want to say hello, I'll get back to you.</h2>
-					</div>
-				</div>
-				</div>
+		<main class="d-flex justify-content-center align-items-center flex-grow-1">
 			
-				<div class="container">
+			<div class="container-xxl">
+				<h1 class="display-4 dp-font-s text-center mb-0">Get in touch!</h1>
 				<div class="row gy-4 gy-md-5 gy-lg-0 align-items-md-center">
-					<div class="col-12">
-						<div class="border overflow-hidden">
-			
+
+					<!--Get in touch-->
+					<div class="col p-4 pb-0 pb-md-4 dp-border-md-only">
+						<h1 class="d-none">Get in touch!</h1>
+						<p class="fs-1 fw-light fst-italic text-md-end ">Whether you have a project in mind, a question, or just want to say hello, feel free to contact me on </br>
+							<a class="link-light link-offset-1 link-underline-opacity-25 link-underline-opacity-100-hover no-wrap dp-t-ease-f" href="#"><i class="bi bi-twitter text-opacity-25"></i>Twitter</a>, 
+							<a class="link-light link-offset-1 link-underline-opacity-25 link-underline-opacity-100-hover no-wrap dp-t-ease-f" href="#"><i class="bi bi-instagram">Instagram</i></a>, 
+							<a class="link-light link-offset-1 link-underline-opacity-25 link-underline-opacity-100-hover no-wrap dp-t-ease-f" href="#"><i class="bi bi-linkedin">Linkedin</i></a> </br>
+							or using 
+							<span class="d-inline d-md-none">the form below</span>
+							<span class="d-none d-md-inline">this form</span>
+						</p>
+					</div>
+
+					<!--Form-->
+					<div class="col-12 col-md-6">
+						<div class="overflow-hidden"> <!--border-->
+
 						<form action="#!">
 							<div class="row gy-4 gy-xl-5 p-4 p-xl-5">
 								<div class="col-12">
 								<label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
-								<input type="text" class="form-control" id="fullname" name="fullname" value="" required>
+								<input type="text" class="form-control dp-form" id="fullname" name="fullname" value="" required>
 								</div>
-								<div class="col-12 col-md-6">
+								<div class="col-12 col-lg-6">
 								<label for="email" class="form-label">Email <span class="text-danger">*</span></label>
 								<div class="input-group">
-									<span class="input-group-text">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-										<path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
-										</svg>
+									<span class="input-group-text dp-form-ibox">
+										<i class="bi bi-envelope-fill" ></i>
 									</span>
-									<input type="email" class="form-control" id="email" name="email" value="" required>
+									<input type="email" class="form-control dp-form" id="email" name="email" value="" required>
 								</div>
 								</div>
-								<div class="col-12 col-md-6">
+								<div class="col-12 col-lg-6">
 								<label for="phone" class="form-label">Phone Number</label>
 								<div class="input-group">
-									<span class="input-group-text">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-										<path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-										</svg>
+									<span class="input-group-text dp-form-ibox">
+										<i class="bi bi-telephone-fill"></i>
 									</span>
-									<input type="tel" class="form-control" id="phone" name="phone" value="">
+									<input type="tel" class="form-control dp-form" id="phone" name="phone" value="">
 								</div>
 								</div>
-								<div class="col-12">
-								<label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
-								<input type="text" class="form-control" id="subject" name="subject" value="" required>
-								</div>
+								
 								<div class="col-12">
 								<label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-								<textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+								<textarea class="form-control dp-form" id="message" name="message" rows="3" required></textarea>
 								</div>
 								<div class="col-12">
 								<div class="d-grid">
-									<button class="btn btn-primary btn-lg" type="submit">Send Message</button>
+									<button class="btn btn-primary btn-lg dp-t-ease-f dp-cta" type="submit">Send Message</button>
 								</div>
 								</div>
 							</div>
@@ -113,7 +113,7 @@
 					
 				</div>
 				</div>
-			</section>
+			
 </main>
 
 

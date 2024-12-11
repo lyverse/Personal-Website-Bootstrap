@@ -106,6 +106,29 @@
   }
 }
 
+.dp-form {
+  border-radius: 0rem;
+}
+
+.dp-form-ibox {
+  background-color: transparent;
+  border: none;
+  border-radius: none;
+}
+
+.dp-cta {
+  border-radius: 0;
+  color: #000;
+  background-color: #fff;
+  --bs-btn-border-color: #fff;
+}
+.dp-cta:hover {
+  --bs-btn-hover-color: rgba(#fff, 1.0);
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #fff;
+  box-shadow: 0.2em 0.2em 0 0 rebeccapurple;
+}
+
 * {
   font-family: "Jost", sans-serif;
   font-feature-settings: "tnum" 1, "ss01" 1;
@@ -116,7 +139,7 @@
 }
 
 .dp-font-sbod {
-  font-family: "Bodoni 11";
+  font-family: "Bodoni 16";
 }
 
 .dp-btn {
@@ -138,6 +161,10 @@
 }
 .dp-social-icons a:hover {
   color: rebeccapurple;
+}
+
+.dp-t-ease-f {
+  transition: all 0.3s ease-in-out;
 }
 
 .ul-dp {
