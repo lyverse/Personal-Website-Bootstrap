@@ -6,7 +6,6 @@
 @import 'fonts';
 @import 'about';
 @import 'contact';
-@import 'portfolio';
 @import 'lightbox';
 
 // Customizzazione Bottoni
@@ -63,7 +62,11 @@
       }
 }
 
-
+//Background opaque color
+.dp-bg-jt{
+   background-color: rgba(43, 48, 53, 0.2);
+   // &-h {} &-o {}
+}
 
 
 
