@@ -17,16 +17,16 @@
 
 //Classe no wrap per impedire di andare a capo
 .no-wrap {
-   white-space: nowrap; /* Impedisce al testo nel span di andare a capo */
+   white-space: nowrap;
  }
    
 // Icone social 
 .dp-social-icons {
    font-size: 1.5rem;
    a {
-      //text-decoration: none;
       color: var(--bs-secondary-color);
       @include transition-ease-fast; 
+      //text-decoration: none;
       
       &:hover {
       	color: $dp-accent;
@@ -41,32 +41,90 @@
 
 // Unordered list customization
 .ul-dp {
-   list-style: none; /* Disabilita il marker predefinito */
+   list-style: none; /* no marker */
    padding: 0;
    margin: 0;
-}
-// Unordered list item customization
-.ul-dp > .dp-list-item {
-   position: relative; /* Necessario per posizionare il marker */
-   padding-left: 1.5rem; /* Aggiungi spazio per il simbolo */
-   --bs-bg-opacity: 1;
-   background-color: transparent !important;
-   border: none;
+
+   // Personalizzazione degli elementi della lista
+   > .dp-list-item {
+      position: relative; /* Necessario per posizionare il marker */
+      padding-left: 1.5rem; /* Aggiungi spazio per il simbolo */
+      --bs-bg-opacity: 1;
+      background-color: transparent !important;
+      border: none;
+
       &:before {
-      content: "✱"; /* Il simbolo della lista */
-      position: absolute;
-      left: 0; /* Posiziona il simbolo a sinistra */
-      top: 0.3rem; /* Allinea verticalmente con il testo */
-      font-size: 1rem; /* Personalizza la dimensione del simbolo */
-      color: currentColor; /* Usa il colore del testo */
+         content: "✱"; /* Il simbolo della lista */
+         position: absolute;
+         left: 0; 
+         top: 0.3rem; /* Allineamento verticale con il testo */
+         font-size: 1rem;
+         color: currentColor; /* Usa il colore del testo */
       }
+   }
 }
+
 
 //Background opaque color
 .dp-bg-jt{
    background-color: rgba(43, 48, 53, 0.2);
    // &-h {} &-o {}
 }
+
+//Bottone "back to the top"
+.dp-back-to-top {
+   bottom: 3rem;
+   right: 3rem;
+   color: #495057;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   overflow: hidden;
+   @include transition-ease-fast;
+
+   i {
+      color: #495057;
+      transition: color 0.3s ease-in-out;
+   }
+
+   span {
+      opacity: 0;
+      visibility: hidden;
+      margin-right: 10px;
+      color: white;
+      @include transition-ease-fast;
+      white-space: nowrap;
+      transform: translateY(10px);
+   }
+
+   &:hover {
+      i {
+         color: white;
+      }
+
+      span {
+         opacity: 1;
+         visibility: visible;
+         transform: translateY(0);
+      }
+   }
+
+   // When using Touch: sempre visibili
+   @media (hover: none) {
+      i {
+         color: white;
+      }
+
+      span {
+         opacity: 1;
+         visibility: visible;
+         transform: translateY(0);
+      }
+   }
+}
+
+
+
 
 
 

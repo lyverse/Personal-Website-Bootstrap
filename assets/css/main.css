@@ -393,7 +393,7 @@
 }
 
 .no-wrap {
-  white-space: nowrap; /* Impedisce al testo nel span di andare a capo */
+  white-space: nowrap;
 }
 
 .dp-social-icons {
@@ -412,11 +412,10 @@
 }
 
 .ul-dp {
-  list-style: none; /* Disabilita il marker predefinito */
+  list-style: none; /* no marker */
   padding: 0;
   margin: 0;
 }
-
 .ul-dp > .dp-list-item {
   position: relative; /* Necessario per posizionare il marker */
   padding-left: 1.5rem; /* Aggiungi spazio per il simbolo */
@@ -427,12 +426,54 @@
 .ul-dp > .dp-list-item:before {
   content: "✱"; /* Il simbolo della lista */
   position: absolute;
-  left: 0; /* Posiziona il simbolo a sinistra */
-  top: 0.3rem; /* Allinea verticalmente con il testo */
-  font-size: 1rem; /* Personalizza la dimensione del simbolo */
+  left: 0;
+  top: 0.3rem; /* Allineamento verticale con il testo */
+  font-size: 1rem;
   color: currentColor; /* Usa il colore del testo */
 }
 
 .dp-bg-jt {
   background-color: rgba(43, 48, 53, 0.2);
+}
+
+.dp-back-to-top {
+  bottom: 3rem;
+  right: 3rem;
+  color: #495057;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.dp-back-to-top i {
+  color: #495057;
+  transition: color 0.3s ease-in-out;
+}
+.dp-back-to-top span {
+  opacity: 0;
+  visibility: hidden;
+  margin-right: 10px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+  transform: translateY(10px);
+}
+.dp-back-to-top:hover i {
+  color: white;
+}
+.dp-back-to-top:hover span {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+@media (hover: none) {
+  .dp-back-to-top i {
+    color: white;
+  }
+  .dp-back-to-top span {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=main.css.map */
