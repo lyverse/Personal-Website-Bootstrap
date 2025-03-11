@@ -20,19 +20,53 @@
    white-space: nowrap;
  }
    
-// Icone social 
-.dp-social-icons {
-   font-size: 1.5rem;
-   a {
-      color: var(--bs-secondary-color);
-      @include transition-ease-fast; 
-      //text-decoration: none;
-      
-      &:hover {
-      	color: $dp-accent;
+
+//Footer
+footer {
+   .footer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+ 
+      @media (min-width: 380px) {
+         flex-direction: row;
+         justify-content: space-between;
+         text-align: left;
       }
-	}
-}  
+   }
+   //Icone social 
+   .dp-social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 1.5rem;
+      a {
+         color: var(--bs-secondary-color);
+         @include transition-ease-fast; 
+         //text-decoration: none;
+         
+         &:hover {
+            color: $dp-accent;
+         }
+      }
+   }
+   //Copyright
+   .copyright {
+      margin-top: 1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+ 
+      @media (min-width: 380px) {
+         margin-top: 0;
+      }
+   }
+}
+ 
+ 
+
 
 // Transition Inclusion
 .dp-t-ease-f {
