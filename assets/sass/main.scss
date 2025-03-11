@@ -75,7 +75,8 @@
 .dp-back-to-top {
    bottom: 3rem;
    right: 3rem;
-   color: #495057;
+   color: rgba(222, 226, 230, 0.75);
+   // #495057;
    text-decoration: none;
    display: flex;
    align-items: center;
@@ -83,7 +84,8 @@
    @include transition-ease-fast;
 
    i {
-      color: #495057;
+      color: rgba(222, 226, 230, 0.75);
+      // #495057;
       transition: color 0.3s ease-in-out;
    }
 
