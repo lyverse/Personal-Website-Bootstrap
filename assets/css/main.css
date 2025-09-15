@@ -32,7 +32,7 @@
   border-color: transparent;
 }
 .navbar-toggler:focus {
-  box-shadow: none; /* Rimuove bordo focus*/
+  box-shadow: none;
 }
 
 .dp-btn-close {
@@ -59,7 +59,7 @@
 }
 
 .navbar-spacer {
-  margin-top: 74px; /* Deve corrispondere all'altezza della navbar */
+  margin-top: 74px;
 }
 
 .wave {
@@ -91,7 +91,6 @@
     transform: rotate(0deg);
   }
 }
-/* color: black;  Rompe cose SISTEMARE */
 * {
   font-family: "Jost", sans-serif;
   font-feature-settings: "tnum" 1, "ss01" 1;
@@ -445,19 +444,19 @@ footer .copyright {
   margin: 0;
 }
 .ul-dp > .dp-list-item {
-  position: relative; /* Necessario per posizionare il marker */
-  padding-left: 1.5rem; /* Aggiungi spazio per il simbolo */
+  position: relative;
+  padding-left: 1.5rem;
   --bs-bg-opacity: 1;
   background-color: transparent !important;
   border: none;
 }
 .ul-dp > .dp-list-item:before {
-  content: "✱"; /* Il simbolo della lista */
+  content: "✱";
   position: absolute;
   left: 0;
-  top: 0.3rem; /* Allineamento verticale con il testo */
+  top: 0.3rem;
   font-size: 1rem;
-  color: currentColor; /* Usa il colore del testo */
+  color: currentColor;
 }
 
 .dp-bg-jt {

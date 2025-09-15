@@ -11,8 +11,6 @@
 // Customizzazione Bottoni
 .dp-btn {
    border-radius: 0;
-   // color: var(--bs-nav-link-color);
-   // --bs-btn-border-color: var(--bs-nav-link-color);
 }
 
 //Classe no wrap per impedire di andare a capo
@@ -45,8 +43,7 @@ footer {
       font-size: 1.5rem;
       a {
          color: var(--bs-secondary-color);
-         @include transition-ease-fast; 
-         //text-decoration: none;
+         @include transition-ease-fast;
          
          &:hover {
             color: $dp-accent;
@@ -81,19 +78,19 @@ footer {
 
    // Personalizzazione degli elementi della lista
    > .dp-list-item {
-      position: relative; /* Necessario per posizionare il marker */
-      padding-left: 1.5rem; /* Aggiungi spazio per il simbolo */
+      position: relative;
+      padding-left: 1.5rem;
       --bs-bg-opacity: 1;
       background-color: transparent !important;
       border: none;
 
       &:before {
-         content: "✱"; /* Il simbolo della lista */
+         content: "✱";
          position: absolute;
          left: 0; 
-         top: 0.3rem; /* Allineamento verticale con il testo */
+         top: 0.3rem;
          font-size: 1rem;
-         color: currentColor; /* Usa il colore del testo */
+         color: currentColor;
       }
    }
 }
@@ -102,7 +99,6 @@ footer {
 //Background opaque color
 .dp-bg-jt{
    background-color: rgba(43, 48, 53, 0.2);
-   // &-h {} &-o {}
 }
 
 //Bottone "back to the top"
@@ -110,7 +106,6 @@ footer {
    bottom: 3rem;
    right: 3rem;
    color: rgba(222, 226, 230, 0.75);
-   // #495057;
    text-decoration: none;
    display: flex;
    align-items: center;
@@ -119,7 +114,6 @@ footer {
 
    i {
       color: rgba(222, 226, 230, 0.75);
-      // #495057;
       transition: color 0.3s ease-in-out;
    }
 
@@ -158,61 +152,3 @@ footer {
       }
    }
 }
-
-
-
-
-
-
-//Chaos Dump
-//-----------------------------------------------------------------
-
-
-// .dp-list-item {
-//    margin-bottom: 3rem;        
-//    --bs-bg-opacity: 1;
-//    background-color: transparent !important;
-// }
-
-// .ul-dp {
-//    list-style-type: "✱ "; 
-//    list-style-position: outside;
-// }
-
-
-// body {
-// 	background: $primary-color;
-// 	color: set-text-color($primary-color);
-	// height: 100vh;
-// 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-// 	line-height: 1;
-// }
-
-// h1, h2, h3 {
-// 	font-weight: 400;
-// }
-
-// a{
-// 	color: set-text-color($primary-color);
-// 	text-decoration: none;
-// }
-
-// .text-secondary {
-// color: $secondary-color;
-// }
-
-// header {
-// 	position: fixed;
-// 	z-index: 2;
-// 	width: 100%;
-// 	padding: 1rem;
-// }
-
-// main {
-// 	height: 100%;
-// 	width: 100%;
-
-// 	
-// }
-
-// -----------------------------------------
